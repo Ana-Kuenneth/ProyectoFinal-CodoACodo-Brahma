@@ -6,101 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cervecería</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <!--NAVBAR-->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar-color">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Cervecería Minerva</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Origen</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cultura cervecera</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Visitanos</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="true">
-                                Cervezas
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <nav class="navbar">
+            <ul class="navbar__items">
+                <a href="#"><img class="navbar__logo" src="./assets/logo-colores-blanco-.png" alt=""></a>
+                <li><a href="#">Origen</a></li>
+                <li><a href="#">Cultura cervecera</a></li>
+                <li><a href="#">Cervezas</a></li>
+                <li><a href="#">Visítanos</a></li>
+                <li><a href="#">Contacto</a></li>
+                
+            </ul>
         </nav>
-
     </header>
-    <!-- <img class="logo__img-primary" src="img/general/loaderMinerva.gif" alt="Minerva" height="20"> -->
+    
     <!--Home - Carrousel-->
-    <section>
-        <div id="carouselExampleInterval" class="carousel_slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="https://pulsocervecero.com/wp-content/uploads/2021/11/Mirva-Navidena.jpg"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="https://www.eleconomista.com.mx/__export/1507831221620/sites/eleconomista/img/historico/minerva-2.jpg_1902800913.jpg"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://factoriadecerveza.com/wp-content/uploads/2015/09/minerva_0_0-1.jpg"
-                        class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-        <!-- <video src="./assets/CervezaMinerva.mp4" autoplay></video> -->
-    </section>
+    <div class="slider-frame">
+        <ul>
+            <li><img src="https://www.cervezaminerva.mx/img/home-slider/slider_cerveza_minerva_mobile_1.jpg" alt=""></li>
+            <li><img src="https://www.cervezaminerva.mx/img/home-slider/slider_cerveza_minerva_2.jpg" alt=""></li>
+            <li><img src="https://www.cervezaminerva.mx/img/home-slider/slider_cerveza_minerva_mobile_3.jpg" alt=""></li>
+            <li><img src="https://www.cervezaminerva.mx/img/home-slider/slider_cerveza_minerva_4.jpg" alt=""></li>
+            <li><img src="https://www.cervezaminerva.mx/img/home-slider/slider_cerveza_minerva_mobile_5.jpg" alt=""></li>
+        </ul>
+    </div>
 
     <!-- Footer social -->
     <footer>
         <section class="ft-social">
             <ul class="ft-social-list">
-                <li><a href="https://www.instagram.com/cervezaminerva/" target="_blank"><img class="iconFooter" src="./assets/redes_soc/IG.svg" alt="Minerva" /></a></li>
+                <li><a href="https://www.instagram.com/cervezaminerva/" target="_blank"><img class="iconFooter"
+                            src="./assets/redes_soc/IG.svg" alt="Minerva" /></a></li>
 
-                <li><a href="https://www.facebook.com/CerveceriaMinerva/" target="_blank"><img class="iconFooter" src="./assets/redes_soc/FB.svg" alt="Minerva" /></a></li>
+                <li><a href="https://www.facebook.com/CerveceriaMinerva/" target="_blank"><img class="iconFooter"
+                            src="./assets/redes_soc/FB.svg" alt="Minerva" /></a></li>
 
-                <li><a href="https://www.youtube.com/channel/UC5kJ8Lak35U6SrsymcJr8AQ" target="_blank"><img class="iconFooter" src="./assets/redes_soc/YT.svg" alt="Minerva" /></a></li>
+                <li><a href="https://www.youtube.com/channel/UC5kJ8Lak35U6SrsymcJr8AQ" target="_blank"><img
+                            class="iconFooter" src="./assets/redes_soc/YT.svg" alt="Minerva" /></a></li>
 
-                <li><a href="https://twitter.com/Cerveza_Minerva?lang=es" target="_blank"><img class="iconFooter" src="./assets/redes_soc/TW.svg" alt="Minerva" /></a></li>
+                <li><a href="https://twitter.com/Cerveza_Minerva?lang=es" target="_blank"><img class="iconFooter"
+                            src="./assets/redes_soc/TW.svg" alt="Minerva" /></a></li>
             </ul>
         </section>
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
