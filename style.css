@@ -4,6 +4,9 @@
 body{
   padding: 0;
   margin: 0;
+
+  display: block;
+
 }
 /* ======================================================================== */
 /* NAVBAR*/
@@ -14,7 +17,7 @@ header{
   margin: 0;
   padding: 0;
   z-index: 9999;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.644);
 }
 
 nav{
@@ -58,8 +61,8 @@ nav{
 /* HOME*/
 /* ======================================================================== */
 .slider-frame {
-  width: 1280px;
-  height: auto;
+  /* width: 1280px; */
+  height: 100vh;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -126,16 +129,137 @@ nav{
 }
 
 /* ======================================================================== */
+/* CERVEZAS*/
+/* ======================================================================== */
+#CERVEZAS{
+  margin: 0;
+  padding: 10% 10% 10% 10%;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 72px;
+  text-transform: uppercase;
+  color: #ffcd00;
+  text-shadow: 0 4px 4px rgba(0,0,0,.5);
+}
+
+.linea_cervezas{
+  background-image: url("/assets/brahma/bg-MediaAlbum.a7a454e4.jpg");
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.cervezas{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  min-height:600px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.productos{
+  display: flex;
+  justify-content: center;
+  align-content: baseline;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 50%;
+  text-align: center;
+
+  margin-top: 50px;
+}
+
+.img_cerveza > a > img{
+  padding: 50px 50px 20px 50px;
+}
+
+#chopp, #lager{
+  height: 12rem;
+}
+#malzbier{
+  height: 12rem;
+  width: 5.5rem;
+}
+#lager{
+  width: 8rem;
+}
+
+/* *************ANIMACIONES****************** */
+/* H1 CERVEZAS */
+.tracking-in-expand{
+	-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* HOVERS */
+#CERVEZAS {
+  text-decoration: inherit;
+}
+#CERVEZAS:hover {
+  text-shadow: 3px 4px 7px rgba(39, 39, 37, 0.883);
+  transition-duration: 1s;
+}
+
+.img_cerveza {
+  transition-duration: 0.5s;
+}
+
+.img_cerveza:hover {
+  text-shadow: 3px 4px 7px rgba(39, 39, 37, 0.883);
+  transform: scale(1.1);
+  transition-timing-function: ease-in-out;
+}
+
+
+/* ======================================================================== */
 /* FOOTER*/
 /* ======================================================================== */
 footer {
-  background-color: #1f1f1f;
-  color: #bbb;
+  background-color: red;
   line-height: 2;
-  position: absolute;
-  width: 100%;
-  margin: -3.4rem 0;
-  z-index: 50;
+
+  height:5rem;
+  width:100%;
+
+  margin: 0;
+  z-index: 9999;
 }
 
 .iconFooter {
@@ -148,19 +272,7 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 0.2rem;
-}
-
-.footer__area-border-top {
-  border-top: 1px solid rgba(128, 128, 128, 0.3);
-}
-
-.footer__area .widgettitle {
-  margin-top: 0;
-  margin-bottom: 0.5em;
-}
-
-.footer__area .widgettitle:after {
-  display: none;
+  margin: 0;
 }
 
 @media screen and (min-width: 400px) {
@@ -185,41 +297,6 @@ footer {
     margin-right: auto;
   }
 }
-
-
-/* 27. footerLogo */
-
-[data-arts-footer-logo="primary"] .logo__img-primary {
-  opacity: 1;
-  visibility: visible;
-}
-
-[data-arts-footer-logo="primary"] .logo__img-secondary {
-  opacity: 0;
-  visibility: hidden;
-}
-
-[data-arts-footer-logo="secondary"] .logo__img-primary {
-  opacity: 0;
-  visibility: hidden;
-}
-
-[data-arts-footer-logo="secondary"] .logo__img-secondary {
-  opacity: 1;
-  visibility: visible;
-}
-
-
-/* 28. footerThemes */
-
-[data-arts-theme-text="light"] .widget_nav_menu ul.menu>li a:hover {
-  color: #fff;
-}
-
-[data-arts-theme-text="light"] .logo__text-title {
-  color: #fff;
-}
-
-[data-arts-theme-text="light"] .logo__text-tagline {
-  color: var(--color-gray-2);
-}
+/* ======================================================================== */
+/* THE END*/
+/* ======================================================================== */
