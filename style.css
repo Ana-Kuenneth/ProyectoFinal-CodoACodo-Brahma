@@ -147,6 +147,22 @@ nav{
   text-shadow: 0 4px 4px rgba(0,0,0,.5);
 }
 
+#MARCA{
+  margin: 0;
+  padding: 10% 10% 10% 10%;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #ffcd00;
+  text-shadow: 0 4px 4px rgba(0,0,0,.5);
+}
+
 .linea_cervezas{
   background-image: url("/assets/brahma/bg-MediaAlbum.a7a454e4.jpg");
   margin: 0;
@@ -182,7 +198,7 @@ nav{
   margin-top: 50px;
 }
 
-.img_cerveza > a > img{
+.tamaño{
   padding: 50px 50px 20px 50px;
 }
 
@@ -247,7 +263,90 @@ nav{
   transition-timing-function: ease-in-out;
 }
 
+/* ********************** */
+.div-imagen {
+  display:inline-block;
+  position:relative;
+}
 
+.div-imagen > div {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  padding:10px;
+  margin:0;
+}
+
+.desvanecer:hover {
+  opacity: 0.07;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+/* ======================================================================== */
+/* CADA CERVEZA */
+/* ======================================================================== */
+
+.fondo_cerveza{
+  background-image: url("https://www.brahma.com.ar/static/media/bg-meetUs.d857943d.jpg");
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.informacion{
+  padding-top: 12%;
+}
+#NOMBRE_CERVEZA{
+  margin: 0;
+  padding: 0 10% 4% 17%;
+
+  text-align: start;
+  letter-spacing: 0.05em;
+
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 72px;
+  text-transform: uppercase;
+  color: #ffae00;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.767);
+}
+.dos_partes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#img_chopp{
+  width: 9rem;
+  height: min-content;
+}
+
+#img_lagger{
+  width: 15%;
+  height: min-content;
+}
+
+#img_malzbier{
+  width: 11%;
+  height: 21rem;
+}
+
+#info{
+  width: 25%;
+  height: min-content;
+}
+
+#img_chopp, #img_lagger, #img_malzbier, #info{
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
 /* ======================================================================== */
 /* FOOTER*/
 /* ======================================================================== */
