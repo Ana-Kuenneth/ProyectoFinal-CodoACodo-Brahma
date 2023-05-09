@@ -9,6 +9,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <!-- Cervezas -->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <!-- Animations -->
     <link href="styles/ihover.css" rel="stylesheet">
 </head>
@@ -41,16 +43,27 @@
         <section class="informacion">
             <h1 class="tracking-in-expand" id="NOMBRE_CERVEZA">CHOPP</h1>
             <div class="dos_partes">
-                
-                    <img id="img_chopp" src="/assets/brahma/brahma-lata-chopp.png" alt="">
-                
-                    <p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quam modi libero excepturi repellendus cumque, doloremque illo corporis cupiditate porro nulla iusto est ipsa fugit voluptate mollitia earum eius qui!</p>
-                
+
+                <img id="img_chopp" src="/assets/brahma/brahma-lata-chopp.png" alt="">
+
+                <p id="info">No es casualidad que Brahma Chopp tenga ese nombre. Tanto él como Chopp Brahma nacen de la misma fuente, tienen el mismo proceso de fabricación y solo se separan durante el enmacetado. Por eso es tan sabroso y refrescante, como la verdadera chuleta.</p>
+
             </div>
+        </section>
+
+        <section class="info_cada_cerv" data-aos="fade-up">
+            <h2 class="data">NUTRIENTES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt obcaecati blanditiis et perspiciatis cum laborum eveniet facilis atque reprehenderit ullam magnam voluptate recusandae accusamus culpa odio, rem iste. Sequi, quia?</p>
+        </section>
+
+        <section class="info_cada_cerv" data-aos="fade-up">
+            <h2 class="data">INGREDIENTES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt obcaecati blanditiis et perspiciatis cum laborum eveniet facilis atque reprehenderit ullam magnam voluptate recusandae accusamus culpa odio, rem iste. Sequi, quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor excepturi voluptatibus aspernatur dolorem molestias consequatur tenetur dignissimos. Doloribus, ex libero facere rem iste delectus ea veniam dolore nulla quasi.</p>
+
         </section>
     </div>
 
-    <!--FOOTER-->
+    <!-- FOOTER-->
     <footer>
         <section class="ft-social">
             <ul class="ft-social-list">
@@ -69,6 +82,13 @@
         </section>
 
     </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
