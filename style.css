@@ -519,10 +519,9 @@ nav {
 
 
 /* ======================================================================== */
-/* CONTACTO*/
+/* VISITANOS Y CONTACTO*/
 /* ======================================================================== */
-
-.contenedor_2partes, .parte1_imagen, .parte2 {
+.contenedor_2partes, .parte1_imagen_contacto, .parte1_imagen_visitanos, .parte2 {
   display: flex;
   /* justify-content: space-between; */
   align-items:start;
@@ -530,30 +529,12 @@ nav {
   flex-wrap: wrap;
 }
 
-/**** lado izquierdo (imagen) ****/
-.parte1_imagen {
-  background-image: url(/assets/contacto_brahma/zyro-image.png);
-  width: 50%;
-  height: 100vh;
-  object-fit: cover;
-
-  opacity: 1;
-  visibility: inherit;
-  transform-origin: 50% 50%;
-  transform: translate(0px, 0px);
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/**** lado derecho (formulario) ****/
 .parte2{
   margin: 0 3% 0 0;
   height: 100vh;
 }
 
-.titulo-contacto {
+.titulo-parte2 {
   margin-bottom: 40px;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
@@ -571,6 +552,58 @@ nav {
   margin-left: -4%;
   margin-top: 15%;
 }
+
+/* ======================================================================== */
+/* VISITANOS */
+/* ======================================================================== */
+.embebido{
+  width: 500px;
+  max-width: 100%;
+  margin: 0;
+  margin-top: 0px;
+  padding: 0 0 0 13%;
+  position: relative;
+}
+
+  /**** lado izquierdo (imagen) ****/
+.parte1_imagen_visitanos {
+  background-image: url(/assets/visitanos_brahma/chapa-brahma.jpg);
+  width: 50%;
+  height: 100vh;
+  object-fit: cover;
+
+  opacity: 1;
+  visibility: inherit;
+  transform-origin: 50% 50%;
+  transform: translate(0px, 0px);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ======================================================================== */
+/* CONTACTO*/
+/* ======================================================================== */
+
+/**** lado izquierdo (imagen) ****/
+.parte1_imagen_contacto {
+  background-image: url(/assets/contacto_brahma/zyro-image.png);
+  width: 50%;
+  height: 100vh;
+  object-fit: cover;
+
+  opacity: 1;
+  visibility: inherit;
+  transform-origin: 50% 50%;
+  transform: translate(0px, 0px);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/**** lado derecho (formulario) ****/
 
 .texto-form{
   font-family: 'Montserrat', sans-serif;
