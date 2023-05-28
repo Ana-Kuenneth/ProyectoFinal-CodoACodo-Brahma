@@ -671,7 +671,68 @@ div.scrollcards .card {
     -webkit-font-smoothing: antialiased;
   }
   
+  /* ======================================================================== */
+  /* SORTEOS*/
+  /* ======================================================================== */
+
+.txt-titulo1 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 70px;
+  text-transform: uppercase;
+  color: #f0171b;
+  padding-top: 30px;
+  }
   
+.txt-titulo2 {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #2c270f;
+  }
+
+.bg_sorteos {
+  background-color: #e9282b21;
+}
+
+.txt_foot {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  text-align:center;
+  color: #001b1b;
+}
+
+.bg_nav {
+  background-image: url("../ProyectoFinal-CodoACodo-1/img/sorteos.jpg");
+  margin: 10;
+  padding: 10;
+  height: 20vh;
+  bottom: 20vh;
+  }
+.t_sorteos {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 150px;
+  text-transform: uppercase;
+  color: #fbff05;
+  padding-top: 20px;
+  height: 20vh;
+  }
+
+  .btn-form {
+    background: #fbff01;
+    color: #ff0000 !important;
+    font-weight: bold;
+  }
+  
+  .btn-form:hover { 
+    background: #fbff0194;
+    color: #ff0000 !important;
+    font-weight:800;
+  
+  }
+
   /* ======================================================================== */
   /* VISITANOS Y CONTACTO*/
   /* ======================================================================== */
