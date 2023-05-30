@@ -675,6 +675,7 @@ div.scrollcards .card {
   /* SORTEOS*/
   /* ======================================================================== */
 
+
 .txt-titulo1 {
   font-weight: 700;
   font-size: 45px;
@@ -705,13 +706,13 @@ div.scrollcards .card {
 
 .bg_nav {
   background-image: url("../ProyectoFinal-CodoACodo-1/img/sorteos.jpg");
-  margin: 10;
-  padding: 10;
+  padding: 10px;
   height: 20vh;
   bottom: 20vh;
   }
 .t_sorteos {
-  font-weight: 700;
+  margin-left: 20px;
+  font-weight: 700px;
   font-size: 25px;
   line-height: 150px;
   text-transform: uppercase;
@@ -720,18 +721,58 @@ div.scrollcards .card {
   height: 20vh;
   }
 
+  .btn-f {
+    padding-top: 30px;
+  }
+
   .btn-form {
     background: #fbff01;
     color: #ff0000 !important;
     font-weight: bold;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
   }
   
   .btn-form:hover { 
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     background: #fbff0194;
     color: #ff0000 !important;
     font-weight:800;
   
   }
+
+  .evento_bg {
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid rgb(243, 170, 170);
+
+  }
+  
+
+  .evento_img {
+    width: 50%;
+    float: left;
+    padding: 15px;
+  }
+  
+  .evento_descripcion {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding: 15px;
+  }
+
+
+
+
+
 
   /* ======================================================================== */
   /* VISITANOS Y CONTACTO*/
